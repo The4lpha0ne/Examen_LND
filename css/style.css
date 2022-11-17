@@ -1,0 +1,125 @@
+*, *::after, *::before { 
+    box-sizing: border-box; 
+    margin: 0%; 
+    padding: 0%; 
+    border: 0%; 
+} 
+
+:root {
+    --PageBG1: #0A0C1B;
+    --PageBG2: #1C1938;
+    --SpanColor: #A462D0; 
+    --primario: #FFC107; 
+    --secundario: #0097A7; 
+    --Charcoal: #36454F; 
+    --DeepBlue: #0021f3; 
+    --BlueViolet: #8a2be2; 
+    --NeonGreen: #39ff14; 
+    --MalachiteGreen: #0BDA51; 
+    --CrimsonRed: #990000; 
+    --DeepOrange: #dc4d01;
+}
+
+html { 
+    /* font-size: 62.5%; */
+    background-color: var(--PageBG1);
+    width: 100%;
+    height: auto;
+
+}
+
+body { /*1rem = 10px*/ 
+    font-size: 20px; 
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center; 
+    color: white;
+    margin: 12rem 6rem 12rem 6rem; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0%;
+}
+
+.part1 {
+    background-color: var(--PageBG2);
+    display: inline-block;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 0%;
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.text1 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.text1 span {
+    color: var(--SpanColor);
+}
+
+.text2 {
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.text3, .text4, .text5 {
+    font-size: 15px;
+}
+
+.img_m {
+    display: inline-block;
+    width: 49%;
+    max-width: 600px;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;  
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/****************************************************************************************************/ 
+/****************************************************************************************************/
+
+/* width */ 
+/* ::-webkit-scrollbar { 
+    width: auto; 
+} */
+
+/* Track */ 
+/* ::-webkit-scrollbar-track-piece { 
+    background: black; 
+} */
+
+/* Handle */ 
+/* ::-webkit-scrollbar-thumb { 
+    background: var(--NeonGreen); 
+    border-radius: 10px; 
+} */
+
+/* Handle on hover */ 
+/* ::-webkit-scrollbar-thumb:hover { 
+    background: aqua; 
+}
+
+html, body { 
+    overflow-x: hidden; 
+    scrollbar-color: #39ff14 black; 
+    scrollbar-width: auto; 
+} */
+
+/****************************************************************************************************/ 
+/****************************************************************************************************/
