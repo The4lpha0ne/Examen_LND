@@ -42,6 +42,14 @@ body { /*1rem = 10px*/
     column-gap: 0%;
 }
 
+@media only screen and (max-width: 600px) { 
+    .container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 0%;
+    } 
+}
+
 .part1 {
     background-color: var(--PageBG2);
     display: inline-block;
@@ -51,6 +59,19 @@ body { /*1rem = 10px*/
     height: auto;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) { 
+    .part1 {
+        background-color: var(--PageBG2);
+        display: inline-block;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        margin: 0%;
+        width: 50%;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 }
 
 .text1 {
@@ -82,6 +103,19 @@ body { /*1rem = 10px*/
     border-bottom-right-radius: 1rem;  
 }
 
+@media only screen and (max-width: 600px) { 
+    .img_m {
+        display: inline-block;
+        width: 49%;
+        max-width: 600px;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;  
+    }
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -90,36 +124,6 @@ body { /*1rem = 10px*/
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
-/****************************************************************************************************/ 
-/****************************************************************************************************/
-
-/* width */ 
-/* ::-webkit-scrollbar { 
-    width: auto; 
-} */
-
-/* Track */ 
-/* ::-webkit-scrollbar-track-piece { 
-    background: black; 
-} */
-
-/* Handle */ 
-/* ::-webkit-scrollbar-thumb { 
-    background: var(--NeonGreen); 
-    border-radius: 10px; 
-} */
-
-/* Handle on hover */ 
-/* ::-webkit-scrollbar-thumb:hover { 
-    background: aqua; 
-}
-
-html, body { 
-    overflow-x: hidden; 
-    scrollbar-color: #39ff14 black; 
-    scrollbar-width: auto; 
-} */
 
 /****************************************************************************************************/ 
 /****************************************************************************************************/
